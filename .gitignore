@@ -1,0 +1,8 @@
+node_modules/
+.DS_Store
+*.log
+# Local evidence, updater state and release staging stay outside the repository.
+evidence/
+.evidence/
+status.json
+history.jsonl

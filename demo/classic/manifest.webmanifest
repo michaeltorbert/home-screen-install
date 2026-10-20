@@ -1,0 +1,16 @@
+{
+  "id": "/demo/classic/",
+  "name": "HSI Classic",
+  "short_name": "HSI Classic",
+  "description": "Home Screen Install classic script demo.",
+  "start_url": "/demo/classic/",
+  "scope": "/demo/classic/",
+  "display": "standalone",
+  "background_color": "#f4f5f7",
+  "theme_color": "#1f6f6a",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>HSI ESM</title>
+    <meta name="apple-mobile-web-app-title" content="HSI ESM">
+    <meta name="theme-color" content="#4b3fa8">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="icons/icon-180.png">
+    <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../demo.css">
+  </head>
+  <body class="demo-esm">
+    <main class="page">
+      <h1>HSI ESM</h1>
+      <p class="lede">ES module demo using <code>dist/home-screen-install.mjs</code>. The button shows in a browser and hides when opened from the Home Screen.</p>
+      <div id="install-slot" class="slot"></div>
+      <p id="status" class="status" role="status" data-state="loading">Starting…</p>
+      <noscript><p class="status" data-state="error">JavaScript is off, so the demo cannot start.</p></noscript>
+      <p class="fine">This page applies hostile global button, dialog and [hidden] rules and odd inherited text styles that the component should ignore. Page click listener heard <span id="clicks-heard">0</span> clicks.</p>
+    </main>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

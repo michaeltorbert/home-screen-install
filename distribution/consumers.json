@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "source": {
+    "repository": "michaeltorbert/home-screen-install",
+    "defaultBranch": "main",
+    "profile": "claude",
+    "appSlug": "claude-bot-mt",
+    "actor": "claude-bot-mt[bot]",
+    "releaseActors": ["claude-bot-mt[bot]", "codex-bot-mt[bot]"]
+  },
+  "checker": ".github/scripts/check-home-screen-install.mjs",
+  "branchPrefix": "home-screen-install/v",
+  "targets": [
+    {
+      "name": "games",
+      "repository": "michaeltorbert/games",
+      "defaultBranch": "main",
+      "path": "shared/home-screen-install",
+      "format": "classic",
+      "profile": "claude",
+      "appSlug": "claude-bot-mt",
+      "actor": "claude-bot-mt[bot]",
+      "commitIdentities": {
+        "claude": {
+          "name": "codex-michaeltorbert[bot]",
+          "email": "3357630+codex-michaeltorbert[bot]@users.noreply.github.com",
+          "resolvedLogin": null
+        },
+        "codex": {
+          "name": "codex-michaeltorbert[bot]",
+          "email": "3357630+codex-michaeltorbert[bot]@users.noreply.github.com",
+          "resolvedLogin": null
+        }
+      },
+      "preCommit": [],
+      "apps": [
+        { "name": "Football", "path": "/football/", "issue": 193 },
+        { "name": "Place by Place", "path": "/place-value-practice/", "issue": 194 },
+        { "name": "Kayak", "path": "/kayak/", "issue": 195 }
+      ]
+    },
+    {
+      "name": "math-connections",
+      "repository": "michaeltorbert/math-connections",
+      "defaultBranch": "main",
+      "path": "src/vendor/home-screen-install",
+      "format": "esm",
+      "profile": "claude",
+      "appSlug": "claude-bot-mt",
+      "actor": "claude-bot-mt[bot]",
+      "commitIdentities": {
+        "claude": {
+          "name": "codex-michaeltorbert[bot]",
+          "email": "3357630+codex-michaeltorbert[bot]@users.noreply.github.com",
+          "resolvedLogin": null
+        },
+        "codex": {
+          "name": "codex-michaeltorbert[bot]",
+          "email": "3357630+codex-michaeltorbert[bot]@users.noreply.github.com",
+          "resolvedLogin": null
+        }
+      },
+      "preCommit": [
+        { "path": "scripts/git-safety-check.sh", "sha256": "43d49086685598d18ae747e26af1ede46cf5cac142bfcb71d6ef9df04aa41bfd" }
+      ],
+      "apps": [{ "name": "Math Connections", "path": "/", "issue": 4 }]
+    },
+    {
+      "name": "homecall",
+      "repository": "michaeltorbert/homecall",
+      "defaultBranch": "main",
+      "path": "src/vendor/home-screen-install",
+      "format": "esm",
+      "profile": "claude",
+      "appSlug": "claude-bot-mt",
+      "actor": "claude-bot-mt[bot]",
+      "commitIdentities": {
+        "claude": {
+          "name": "claude-bot-mt[bot]",
+          "email": "275554496+claude-bot-mt[bot]@users.noreply.github.com",
+          "resolvedLogin": "claude-bot-mt[bot]"
+        }
+      },
+      "preCommit": [],
+      "apps": [{ "name": "Homecall", "path": "/", "issue": 52 }]
+    },
+    {
+      "name": "sportsapp",
+      "repository": "michaeltorbert/sportsapp",
+      "defaultBranch": "main",
+      "path": "src/vendor/home-screen-install",
+      "format": "esm",
+      "profile": "claude",
+      "appSlug": "claude-bot-mt",
+      "actor": "claude-bot-mt[bot]",
+      "commitIdentities": {
+        "claude": {
+          "name": "claude-bot-mt[bot]",
+          "email": "275554496+claude-bot-mt[bot]@users.noreply.github.com",
+          "resolvedLogin": "claude-bot-mt[bot]"
+        }
+      },
+      "preCommit": [],
+      "apps": [{ "name": "Saturday Signal", "path": "/", "issue": 169 }]
+    }
+  ]
+}
